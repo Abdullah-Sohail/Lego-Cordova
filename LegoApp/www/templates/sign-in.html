@@ -1,0 +1,32 @@
+﻿<ion-view view-title="Sign-In" hide-nav-bar="true" >
+    <ion-content scroll="false" class="signIn">
+        <div class="logo">
+            <img src="images/s1.jpg"/>
+            <h1 style="font-family:'Franklin Gothic'; color:#387ef5;">Lego</h1>
+        </div>
+        
+        <div class="list">
+            <label class="item item-input">
+                <input type="text" ng-model="user.username" placeholder="Username">
+            </label>
+            <label class="item item-input">
+                <input type="password" ng-model="user.password" placeholder="Password">
+            </label>
+            <fieldset data-role="controlgroup" style="border:0px">
+                <input type="checkbox" name="chck-rememberme" id="chck-rememberme">
+                <label for="chck-rememberme">Remember me</label>
+            </fieldset>
+        </div>
+        <div class="padding">
+            <button class="button button-block button-positive" ng-click="signIn(user)">
+                Sign-In
+            </button>
+            <p class="text-center">
+                <a href="#/forgot-password">Forgot password</a>
+            </p>
+            <div class="col text-center">
+                Don't have an account? <strong><a href="#">SignUp now!</a></strong>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
